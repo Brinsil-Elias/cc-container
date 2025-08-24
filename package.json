@@ -1,0 +1,60 @@
+{
+  "name": "cc-container",
+  "version": "0.0.1",
+  "description": "A CLI tool to run Claude Code in isolated containers",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "cc-container": "dist/index.js"
+  },
+  "directories": {
+    "templates": "templates"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "format": "prettier --write .",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "claude-code",
+    "claude",
+    "development",
+    "anthropic",
+    "container",
+    "docker",
+    "devcontainer",
+    "templates"
+  ],
+  "author": {
+    "name": "Brinsil-Elias",
+    "email": "brinsil.saju@tryzens.com",
+    "url": "https://github.com/Brinsil-Elias"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "chalk": "^5.3.0",
+    "ora": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.10.5",
+    "prettier": "^3.6.2",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brinsil-Elias/cc-container.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Brinsil-Elias/cc-container/issues"
+  },
+  "homepage": "https://github.com/Brinsil-Elias/cc-container#readme"
+}

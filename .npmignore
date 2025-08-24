@@ -1,0 +1,50 @@
+# Source files (only include built dist/)
+src/
+
+# Development configuration files
+.prettierrc
+CLAUDE.md
+tsconfig.json
+tsup.config.ts
+
+# Development dependencies and build artifacts
+node_modules/
+*.log
+*.tgz
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git files
+.gitignore
+.git/
+
+# Testing and coverage
+coverage/
+.nyc_output/
+test/
+tests/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Package manager files
+bun.lock
+yarn.lock
+package-lock.json
+
+# Public assets (keep README.md but exclude large media files)
+public/
